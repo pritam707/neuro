@@ -1,0 +1,54 @@
+.user-card-container {
+  max-height: 550px;
+  overflow-y: auto;
+  width: inherit;
+  padding: 20px;
+}
+
+.user-card-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Center cards horizontally */
+}
+
+.user-card {
+  flex: 0 0 calc(33.33% - 20px);
+  max-width: calc(33.33% - 20px); /* Set maximum width for each card */
+  min-width: calc(200px - 20px); /* Set minimum width for each card */
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+.user-card img {
+  width: 100%;
+  max-width: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.user-details {
+  flex: 1;
+}
+
+@media (max-width: 992px) {
+  .user-card {
+    flex: 0 0 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+    min-width: calc(200px - 20px);
+  }
+}
+
+@media (max-width: 600px) {
+  .user-card {
+    flex: 0 0 calc(100% - 20px);
+    max-width: calc(100% - 20px);
+    min-width: calc(200px - 20px);
+  }
+}

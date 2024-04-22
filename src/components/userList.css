@@ -1,0 +1,45 @@
+.user-table {
+  border-collapse: collapse;
+  margin: 10px;
+}
+
+.table-container {
+  max-height: 450px; /* set a fixed height for the container */
+  overflow-y: auto; /* enable vertical scrolling */
+}
+
+.Name {
+  max-width: 10ch; /* Limiting width to 10 characters */
+  overflow: hidden; /* Hide overflowing content */
+  text-overflow: ellipsis; /* Display ellipsis for overflowed content */
+  white-space: nowrap; /* Prevent wrapping */
+}
+
+.edit {
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+thead {
+  border-bottom: 2px black solid;
+}
+
+.user-table th,
+.user-table td {
+  border: 1px solid #cccccc00;
+  padding: 8px;
+}
+
+.user-table th {
+  background-color: #f2f2f200;
+}
+
+.user-table th:first-child,
+.user-table td:first-child {
+  border-left: none;
+}
+
+.user-table th:last-child,
+.user-table td:last-child {
+  border-right: none;
+}

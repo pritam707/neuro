@@ -1,0 +1,85 @@
+.user-form-container {
+  width: 100%;
+  padding: 20px;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 2px black solid;
+  margin: 10px;
+}
+
+.user-form-container h1 {
+  margin-bottom: 5px;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.user-form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-form-container label {
+  margin-bottom: 5px;
+  color: #fff;
+  width: 20%; /* Adjusted width */
+}
+
+.user-form-container .form-row {
+  display: inline-flex; /* Changed to inline-flex */
+  align-items: center;
+  width: 100%; /* Added width */
+}
+
+.user-form-container .form-row label {
+  margin-left: 10px;
+  font-size: large;
+  text-align: left;
+}
+
+.user-form-container .form-row input[type="text"],
+.user-form-container .form-row input[type="number"],
+.user-form-container .form-row input[type="email"],
+.user-form-container .form-row input[type="tel"],
+.user-form-container .form-row select {
+  width: 100%; /* Adjusted width */
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+  transition: border-color 0.3s ease;
+}
+
+.user-form-container .form-row select {
+  padding-bottom: 5px;
+  border-color: #03e9f4;
+  background-color: #192230;
+}
+
+.user-form-container .form-row input:focus,
+.user-form-container .form-row input:valid {
+  border-color: #03e9f4;
+}
+
+.user-form-container button {
+  width: 20%;
+  font-size: large;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  background-color: #03e9f4;
+  color: #000;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.user-form-container button:hover {
+  background-color: #08b1b9;
+}
