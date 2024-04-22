@@ -30,7 +30,7 @@ function UserList({ refresh }) {
 
     const deleteUser = async (userId) => {
         try {
-            const response = await fetch(`http://localhost:5000/deleteUser/${userId}`, {
+            const response = await fetch(`https://neurobuild-api.onrender.com/deleteUser/${userId}`, {
                 method: 'DELETE',
             });
             if (!response.ok) {
